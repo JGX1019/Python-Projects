@@ -21,20 +21,20 @@ questions = [
     {"question": "What is the full form of USB? ", "answer": "universal serial bus"},
 ]
 
-correct_answers = 0
-total_questions = len(questions)
+correct = 0
+total_q = len(questions)
 
 for q in questions:
     user_input = input(q["question"] + " ").strip().lower()
     if user_input == q["answer"]:
         print("Correct!")
-        correct_answers += 1
+        correct += 1
     else:
         print(f"Incorrect! The correct answer was {q['answer']}.")
 
-success_percentage = (correct_answers / total_questions) * 100
+success_percentage = (correct / total_q) * 100
 
-print(f"You got {correct_answers} correct answers out of {total_questions}")
+print(f"You got {correct} correct answers out of {total_q}")
 
 print(f"Your success rate is {success_percentage:.2f}%.")
    
