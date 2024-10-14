@@ -1,0 +1,22 @@
+{
+    "data": [
+        {
+            "description": "Study",
+            "due_date": "2024-10-04",
+            "priority": "high",
+            "status": "pending"
+        },
+        {
+            "description": "Cooking",
+            "due_date": "2024-10-02",
+            "priority": "low",
+            "status": "complete"
+        },
+        {
+            "description": "Coding",
+            "due_date": "2024-10-10",
+            "priority": "low",
+            "status": "pending"
+        }
+    ]
+}
