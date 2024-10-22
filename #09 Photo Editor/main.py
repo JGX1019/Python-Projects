@@ -1,8 +1,8 @@
 from PIL import Image, ImageEnhance, ImageFilter
 import os
 
-path = "Python-Projects\\#09 Photo Editor\\Images"
-pathout = "Python-Projects\\#09 Photo Editor\\Edited_Images"
+path = "Images"
+pathout = "Edited_Images"
 
 if not os.path.exists(path):
     os.makedirs(path)
@@ -29,7 +29,7 @@ for filename in os.listdir(path):
             color_enhancer = ImageEnhance.Color(img)
             img = color_enhancer.enhance(1.3)  
 
-            img = img.filter(ImageFilter.GaussianBlur(radius=0.5)) 
+            img = img.filter(ImageFilter.GaussianBlur(radius=0.5))
 
             cleanname = os.path.splitext(filename)[0]
             extension = os.path.splitext(filename)[1]
